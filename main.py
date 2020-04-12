@@ -1,6 +1,6 @@
 '''
 Simple Mail Spoofer
-Created By Milad Khoshdel
+Created By Milad Khoshdel & Morteza Amirmohseni
 Website: https://www.regux.com
 Email: miladkhoshdel@gmail.com
 '''
