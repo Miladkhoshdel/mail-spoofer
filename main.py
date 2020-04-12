@@ -20,10 +20,10 @@ message = "To:" + receiver_email + "\nFrom:" + sender_email + "\nsubject:" + sub
 # Try to log in to server and send email
 try:
     server = smtplib.SMTP(smtp_server,port)
-    server.ehlo('mail.regux.com')
+    server.ehlo(smtp_server)
     if secure_connection:
         server.starttls()
-        server.ehlo('mail.regux.com')
+        server.ehlo(smtp_server)
     server.sendmail(sender_email, receiver_email, message)
     print("\nMessage Sent Successfully.")
 except Exception as e:
